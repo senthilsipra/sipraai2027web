@@ -1,0 +1,6 @@
+{
+  "name": "CXO.dev Concept Prototype",
+  "description": "An editorial, contemporary homepage redesign prototype based on CXO.dev reference architecture and messaging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
