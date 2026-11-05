@@ -34,15 +34,15 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
           <div className="flex items-center gap-3 shrink-0">
             <a
               href="#"
-              className="text-xl font-bold tracking-tight text-slate-900 flex items-center gap-1.5 whitespace-nowrap hover:opacity-90 transition-opacity"
+              className="text-xl font-bold tracking-tight text-[#4E4E4E] flex items-center gap-1.5 whitespace-nowrap hover:opacity-90 transition-opacity"
             >
-              <span className="w-2.5 h-2.5 bg-blue-700 rounded-xs inline-block" />
+              <span className="w-2.5 h-2.5 bg-[#ce2124] rounded-xs inline-block" />
               <span>CXO.DEV</span>
             </a>
           </div>
 
           {/* Zone 2: Navigation Links */}
-          <nav className="hidden md:flex items-center gap-7 text-[13px] font-medium text-slate-700">
+          <nav className="hidden md:flex items-center gap-7 text-[13px] font-medium text-[#5C5C5C]">
             {/* Services Dropdown */}
             <div className="relative" ref={servicesRef}>
               <button
@@ -52,14 +52,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
                   setResourcesOpen(false);
                 }}
                 className={`flex items-center gap-1 transition-colors py-1 cursor-pointer whitespace-nowrap shrink-0 ${
-                  servicesOpen ? 'text-blue-700' : 'hover:text-slate-900'
+                  servicesOpen ? 'text-[#ce2124]' : 'hover:text-[#4E4E4E]'
                 }`}
                 aria-expanded={servicesOpen}
               >
                 <span>Services</span>
                 <ChevronDown
                   className={`w-3.5 h-3.5 text-stone-400 transition-transform ${
-                    servicesOpen ? 'rotate-180 text-blue-700' : ''
+                    servicesOpen ? 'rotate-180 text-[#ce2124]' : ''
                   }`}
                 />
               </button>
@@ -69,34 +69,34 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
                   <a
                     href="#paths-in"
                     onClick={() => setServicesOpen(false)}
-                    className="block px-4 py-2.5 text-slate-800 hover:bg-stone-50 hover:text-blue-700 transition-colors"
+                    className="block px-4 py-2.5 text-[#4E4E4E] hover:bg-stone-50 hover:text-[#ce2124] transition-colors"
                   >
                     <div className="font-semibold">AI Engineering Acceleration</div>
-                    <div className="text-stone-500 text-[11px] font-normal">Repo readiness & delivery pipelines</div>
+                    <div className="text-[#5C5C5C] text-[11px] font-normal">Repo readiness & delivery pipelines</div>
                   </a>
                   <a
                     href="#paths-in"
                     onClick={() => setServicesOpen(false)}
-                    className="block px-4 py-2.5 text-slate-800 hover:bg-stone-50 hover:text-blue-700 transition-colors"
+                    className="block px-4 py-2.5 text-[#4E4E4E] hover:bg-stone-50 hover:text-[#ce2124] transition-colors"
                   >
                     <div className="font-semibold">AI Transformation</div>
-                    <div className="text-stone-500 text-[11px] font-normal">Company operating model for leadership</div>
+                    <div className="text-[#5C5C5C] text-[11px] font-normal">Company operating model for leadership</div>
                   </a>
                   <a
                     href="#paths-in"
                     onClick={() => setServicesOpen(false)}
-                    className="block px-4 py-2.5 text-slate-800 hover:bg-stone-50 hover:text-blue-700 transition-colors"
+                    className="block px-4 py-2.5 text-[#4E4E4E] hover:bg-stone-50 hover:text-[#ce2124] transition-colors"
                   >
                     <div className="font-semibold">AI Executive Coaching</div>
-                    <div className="text-stone-500 text-[11px] font-normal">Hands-on guidance for technical executives</div>
+                    <div className="text-[#5C5C5C] text-[11px] font-normal">Hands-on guidance for technical executives</div>
                   </a>
                   <a
                     href="#paths-in"
                     onClick={() => setServicesOpen(false)}
-                    className="block px-4 py-2.5 text-slate-800 hover:bg-stone-50 hover:text-blue-700 transition-colors"
+                    className="block px-4 py-2.5 text-[#4E4E4E] hover:bg-stone-50 hover:text-[#ce2124] transition-colors"
                   >
                     <div className="font-semibold">AI Training & Workshops</div>
-                    <div className="text-stone-500 text-[11px] font-normal">Team courses and hands-on tool mastery</div>
+                    <div className="text-[#5C5C5C] text-[11px] font-normal">Team courses and hands-on tool mastery</div>
                   </a>
                   <div className="border-t border-stone-100 my-1"></div>
                   <button
@@ -104,7 +104,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
                       setServicesOpen(false);
                       onOpenPlaceholder('Course: Executive Playbook for AI', '/course/exec');
                     }}
-                    className="w-full text-left px-4 py-2 text-blue-700 hover:bg-blue-50 font-medium flex items-center justify-between"
+                    className="w-full text-left px-4 py-2 text-[#ce2124] hover:bg-[#ce2124]/10 font-medium flex items-center justify-between"
                   >
                     <span>Course: Executive Playbook</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
@@ -115,14 +115,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
 
             <button
               onClick={() => onOpenPlaceholder('Customers & Case Studies', '/customers')}
-              className="hover:text-slate-900 transition-colors py-1 cursor-pointer whitespace-nowrap shrink-0"
+              className="hover:text-[#4E4E4E] transition-colors py-1 cursor-pointer whitespace-nowrap shrink-0"
             >
               Customers
             </button>
 
             <a
               href="#founders"
-              className="hover:text-slate-900 transition-colors py-1 whitespace-nowrap shrink-0"
+              className="hover:text-[#4E4E4E] transition-colors py-1 whitespace-nowrap shrink-0"
             >
               About
             </a>
@@ -136,14 +136,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
                   setServicesOpen(false);
                 }}
                 className={`flex items-center gap-1 transition-colors py-1 cursor-pointer whitespace-nowrap shrink-0 ${
-                  resourcesOpen ? 'text-blue-700' : 'hover:text-slate-900'
+                  resourcesOpen ? 'text-[#ce2124]' : 'hover:text-[#4E4E4E]'
                 }`}
                 aria-expanded={resourcesOpen}
               >
                 <span>Resources</span>
                 <ChevronDown
                   className={`w-3.5 h-3.5 text-stone-400 transition-transform ${
-                    resourcesOpen ? 'rotate-180 text-blue-700' : ''
+                    resourcesOpen ? 'rotate-180 text-[#ce2124]' : ''
                   }`}
                 />
               </button>
@@ -155,20 +155,20 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
                       setResourcesOpen(false);
                       onOpenPlaceholder('AI Readiness Assessment Tool', '/ai-readiness-assessment');
                     }}
-                    className="w-full text-left px-4 py-2.5 text-slate-800 hover:bg-stone-50 hover:text-blue-700 transition-colors"
+                    className="w-full text-left px-4 py-2.5 text-[#4E4E4E] hover:bg-stone-50 hover:text-[#ce2124] transition-colors"
                   >
                     <div className="font-semibold">AI Readiness Assessment</div>
-                    <div className="text-stone-500 text-[11px] font-normal">Evaluate technical & team posture</div>
+                    <div className="text-[#5C5C5C] text-[11px] font-normal">Evaluate technical & team posture</div>
                   </button>
                   <button
                     onClick={() => {
                       setResourcesOpen(false);
                       onOpenPlaceholder('Engineering & AI Blog', '/blog');
                     }}
-                    className="w-full text-left px-4 py-2.5 text-slate-800 hover:bg-stone-50 hover:text-blue-700 transition-colors"
+                    className="w-full text-left px-4 py-2.5 text-[#4E4E4E] hover:bg-stone-50 hover:text-[#ce2124] transition-colors"
                   >
                     <div className="font-semibold">Blog & Insights</div>
-                    <div className="text-stone-500 text-[11px] font-normal">Playbooks from the field</div>
+                    <div className="text-[#5C5C5C] text-[11px] font-normal">Playbooks from the field</div>
                   </button>
                 </div>
               )}
@@ -179,13 +179,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
           <div className="flex items-center gap-3 shrink-0">
             <button
               onClick={() => onOpenPlaceholder('Client Portal Login', '/login')}
-              className="hidden lg:inline-flex text-xs font-medium text-stone-600 hover:text-slate-900 transition-colors px-2 py-1.5 whitespace-nowrap"
+              className="hidden lg:inline-flex text-xs font-medium text-[#5C5C5C] hover:text-[#4E4E4E] transition-colors px-2 py-1.5 whitespace-nowrap"
             >
               Client login
             </button>
             <a
               href="#talk"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-blue-700 text-white hover:bg-blue-800 transition-colors shadow-xs whitespace-nowrap shrink-0"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-[#ce2124] text-white hover:bg-[#b01b1e] transition-colors shadow-xs whitespace-nowrap shrink-0"
             >
               <span>Talk to us</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -195,7 +195,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 text-slate-700 hover:text-slate-900 hover:bg-stone-200/60 rounded-lg transition-colors cursor-pointer"
+              className="md:hidden p-2 text-[#5C5C5C] hover:text-[#4E4E4E] hover:bg-stone-200/60 rounded-lg transition-colors cursor-pointer"
               aria-label="Toggle navigation menu"
               aria-expanded={mobileMenuOpen}
             >
@@ -208,7 +208,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-stone-200 px-4 pt-3 pb-6 space-y-3 animate-in slide-in-from-top-2 duration-150">
-          <div className="space-y-1 text-sm font-medium text-slate-800">
+          <div className="space-y-1 text-sm font-medium text-[#4E4E4E]">
             <a
               href="#system"
               onClick={() => setMobileMenuOpen(false)}
@@ -242,7 +242,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
                 setMobileMenuOpen(false);
                 onOpenPlaceholder('Customers & Case Studies', '/customers');
               }}
-              className="w-full text-left px-3 py-2 rounded-lg hover:bg-stone-100 text-slate-800"
+              className="w-full text-left px-3 py-2 rounded-lg hover:bg-stone-100 text-[#4E4E4E]"
             >
               Customers
             </button>
@@ -251,7 +251,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
                 setMobileMenuOpen(false);
                 onOpenPlaceholder('AI Readiness Assessment Tool', '/ai-readiness-assessment');
               }}
-              className="w-full text-left px-3 py-2 rounded-lg hover:bg-stone-100 text-slate-800"
+              className="w-full text-left px-3 py-2 rounded-lg hover:bg-stone-100 text-[#4E4E4E]"
             >
               AI Readiness Assessment
             </button>
@@ -263,14 +263,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPlaceholder }) => {
                 setMobileMenuOpen(false);
                 onOpenPlaceholder('Client Portal Login', '/login');
               }}
-              className="w-full py-2.5 px-3 text-center text-xs font-semibold text-slate-700 bg-stone-100 rounded-lg hover:bg-stone-200"
+              className="w-full py-2.5 px-3 text-center text-xs font-semibold text-[#5C5C5C] bg-stone-100 rounded-lg hover:bg-stone-200"
             >
               Client Login
             </button>
             <a
               href="#talk"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full py-2.5 px-3 text-center text-xs font-semibold text-white bg-blue-700 rounded-lg hover:bg-blue-800 shadow-xs flex items-center justify-center gap-1.5"
+              className="w-full py-2.5 px-3 text-center text-xs font-semibold text-white bg-[#ce2124] rounded-lg hover:bg-[#b01b1e] shadow-xs flex items-center justify-center gap-1.5"
             >
               <span>Talk to us</span>
               <ArrowRight className="w-3.5 h-3.5" />

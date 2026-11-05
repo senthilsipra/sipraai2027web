@@ -35,30 +35,30 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPlaceholder }) =
           
           {/* Left Column: Value Proposition & CTAs */}
           <div className="lg:col-span-6 space-y-6 lg:pt-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-stone-100 border border-stone-200/90 rounded-full text-xs font-medium text-stone-700">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-600" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-stone-100 border border-stone-200/90 rounded-full text-xs font-medium text-[#5C5C5C]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ce2124]" />
               <span>AI Advisory & Engineering Acceleration</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-slate-900 tracking-tight leading-[1.12] text-balance">
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-extrabold text-[#4E4E4E] tracking-tight leading-[1.12] text-balance">
               AI transformation for{' '}
-              <span className="relative inline-block text-blue-700">
+              <span className="relative inline-block text-[#ce2124]">
                 AI-pilled
-                <svg className="absolute -bottom-1 left-0 w-full h-2 text-blue-300 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <svg className="absolute -bottom-1 left-0 w-full h-2 text-[#ce2124]/40 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10, 100 5" stroke="currentColor" strokeWidth="4" fill="transparent" />
                 </svg>
               </span>{' '}
               leaders
             </h1>
 
-            <p className="text-lg sm:text-xl text-stone-600 leading-relaxed max-w-xl font-normal">
+            <p className="text-lg sm:text-xl text-[#5C5C5C] leading-relaxed max-w-xl font-normal">
               We help technical leaders build agent-first organisations that ship faster with AI.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
               <a
                 href="#talk"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-blue-700 text-white font-semibold text-sm hover:bg-blue-800 transition-all shadow-sm hover:shadow group cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#ce2124] text-white font-semibold text-sm hover:bg-[#b01b1e] transition-all shadow-sm hover:shadow group cursor-pointer"
               >
                 <span>Talk to us</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -71,7 +71,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPlaceholder }) =
                     '/ai-readiness-assessment'
                   )
                 }
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white text-slate-800 border border-stone-300 font-semibold text-sm hover:bg-stone-50 hover:border-stone-400 transition-all cursor-pointer shadow-2xs"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white text-[#4E4E4E] border border-stone-300 font-semibold text-sm hover:bg-stone-50 hover:border-stone-400 transition-all cursor-pointer shadow-2xs"
               >
                 <span>Take Our Assessment</span>
                 <ChevronRight className="w-4 h-4 text-stone-400" />
@@ -222,8 +222,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPlaceholder }) =
               {activeMetricTab === 'velocity' && (
                 <div className="space-y-4 py-2">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="font-medium text-stone-600">Work Moved by Autonomous & Assisted Agents</span>
-                    <span className="font-semibold text-blue-700 font-mono">This Quarter</span>
+                    <span className="font-medium text-[#5C5C5C]">Work Moved by Autonomous & Assisted Agents</span>
+                    <span className="font-semibold text-[#ce2124] font-mono">This Quarter</span>
                   </div>
 
                   {/* Clean Visual Bar Chart */}
@@ -239,10 +239,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPlaceholder }) =
                     ].map((bar, i) => (
                       <div key={i} className="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
                         <div
-                          className="w-full bg-blue-100 group-hover:bg-blue-600 rounded-t-sm transition-all duration-300 relative"
+                          className="w-full bg-[#ce2124]/15 group-hover:bg-[#ce2124] rounded-t-sm transition-all duration-300 relative"
                           style={{ height: bar.height }}
                         >
-                          <div className="opacity-0 group-hover:opacity-100 absolute -top-6 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-[10px] px-1.5 py-0.5 rounded font-mono pointer-events-none transition-opacity">
+                          <div className="opacity-0 group-hover:opacity-100 absolute -top-6 left-1/2 -translate-x-1/2 bg-[#4E4E4E] text-white text-[10px] px-1.5 py-0.5 rounded font-mono pointer-events-none transition-opacity">
                             {bar.label}
                           </div>
                         </div>
@@ -259,13 +259,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPlaceholder }) =
               {/* Recommendation Strip (Matching Reference) */}
               <div className="pt-3 border-t border-stone-100 flex items-center justify-between gap-3 text-xs">
                 <div className="flex items-center gap-2 text-stone-700">
-                  <span className="w-2 h-2 rounded-full bg-blue-600"></span>
-                  <span className="font-semibold text-slate-900">Recommended path:</span>
-                  <span className="text-stone-600">Redesign how work moves</span>
+                  <span className="w-2 h-2 rounded-full bg-[#ce2124]"></span>
+                  <span className="font-semibold text-[#4E4E4E]">Recommended path:</span>
+                  <span className="text-[#5C5C5C]">Redesign how work moves</span>
                 </div>
                 <a
                   href="#how-we-work"
-                  className="text-blue-700 hover:text-blue-800 font-semibold inline-flex items-center gap-1 text-xs whitespace-nowrap cursor-pointer"
+                  className="text-[#ce2124] hover:text-[#b01b1e] font-semibold inline-flex items-center gap-1 text-xs whitespace-nowrap cursor-pointer"
                 >
                   <span>View Services</span>
                   <ArrowRight className="w-3 h-3" />
@@ -341,7 +341,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPlaceholder }) =
               ].map((tool, idx) => (
                 <span
                   key={idx}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-stone-200 rounded-lg text-slate-700 font-medium hover:border-blue-300 hover:text-blue-900 transition-colors shadow-2xs"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-stone-200 rounded-lg text-[#5C5C5C] font-medium hover:border-[#ce2124]/40 hover:text-[#ce2124] transition-colors shadow-2xs"
                 >
                   <span>{tool}</span>
                 </span>

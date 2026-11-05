@@ -35,17 +35,17 @@ export const PlaceholderModal: React.FC<PlaceholderModalProps> = ({
           <X className="w-5 h-5" />
         </button>
 
-        <div className="flex items-center gap-2.5 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-2">
+        <div className="flex items-center gap-2.5 text-[#ce2124] text-xs font-semibold uppercase tracking-wider mb-2">
           <Info className="w-4 h-4" />
           <span>Prototype Exploration</span>
         </div>
 
-        <h3 className="text-xl font-bold text-slate-900 tracking-tight mb-2">
+        <h3 className="text-xl font-bold text-[#4E4E4E] tracking-tight mb-2">
           {title}
         </h3>
 
-        <p className="text-sm text-stone-600 leading-relaxed mb-5">
-          This is a <strong className="font-semibold text-slate-900">homepage-only prototype</strong> created to evaluate the new light editorial visual direction against the reference structure.
+        <p className="text-sm text-[#5C5C5C] leading-relaxed mb-5">
+          This is a <strong className="font-semibold text-[#4E4E4E]">homepage-only prototype</strong> created to evaluate the new light editorial visual direction against the reference structure.
         </p>
 
         <div className="bg-stone-50 rounded-xl p-3.5 border border-stone-200 text-xs text-stone-600 font-mono mb-6">
@@ -58,14 +58,14 @@ export const PlaceholderModal: React.FC<PlaceholderModalProps> = ({
         <div className="flex items-center justify-end gap-3">
           <button
             onClick={onClose}
-            className="px-4 py-2 text-xs font-medium text-slate-700 hover:bg-stone-100 rounded-lg transition-colors cursor-pointer"
+            className="px-4 py-2 text-xs font-medium text-[#5C5C5C] hover:bg-stone-100 rounded-lg transition-colors cursor-pointer"
           >
             Close
           </button>
           <a
             href="#talk"
             onClick={onClose}
-            className="px-4 py-2 text-xs font-medium text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer shadow-xs"
+            className="px-4 py-2 text-xs font-medium text-white bg-[#ce2124] hover:bg-[#b01b1e] rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer shadow-xs"
           >
             <span>Discuss in Contact Form</span>
             <ArrowUpRight className="w-3.5 h-3.5" />

@@ -16,7 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPlaceholder }) => {
           {/* Brand & Tagline (Spans 4 cols) */}
           <div className="md:col-span-4 space-y-4">
             <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 bg-blue-500 rounded-xs inline-block" />
+              <span className="w-2.5 h-2.5 bg-[#ce2124] rounded-xs inline-block" />
               <span className="text-xl font-bold tracking-tight text-white">CXO.DEV</span>
             </div>
             <p className="text-base font-medium text-stone-200">
@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPlaceholder }) => {
               We help technical executives create agent-first engineering organizations with production-grade platform readiness.
             </p>
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-stone-800 rounded-md text-[11px] font-mono text-stone-400">
-              <Sparkles className="w-3 h-3 text-blue-400" />
+              <Sparkles className="w-3 h-3 text-[#ce2124]" />
               <span>Concept preview — reference copy</span>
             </div>
           </div>
@@ -65,7 +65,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPlaceholder }) => {
                     onClick={() =>
                       onOpenPlaceholder('Course: Executive Playbook for AI', '/course/exec')
                     }
-                    className="text-left text-blue-400 hover:text-blue-300 transition-colors"
+                    className="text-left text-[#ce2124] hover:text-[#f87171] transition-colors"
                   >
                     Course: Executive Playbook
                   </button>
@@ -189,7 +189,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPlaceholder }) => {
             <span>·</span>
             <span className="text-stone-400">Built in public</span>
             <span>·</span>
-            <span className="text-blue-400 font-mono">Reference content to be replaced</span>
+            <span className="text-[#ce2124] font-mono">Reference content to be replaced</span>
           </div>
         </div>
 

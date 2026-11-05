@@ -40,7 +40,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAFAF8] text-slate-900 flex flex-col font-sans selection:bg-blue-600/15 selection:text-blue-900 antialiased">
+    <div className="min-h-screen bg-[#FAFAF8] text-[#4E4E4E] flex flex-col font-sans selection:bg-[#ce2124]/15 selection:text-[#ce2124] antialiased">
       {/* 1. Announcement Strip */}
       <NoticeBanner onOpenPlaceholder={handleOpenPlaceholder} />
 

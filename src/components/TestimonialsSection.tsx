@@ -9,10 +9,10 @@ export const TestimonialsSection: React.FC = () => {
         {/* Header with Reference Notice */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div className="space-y-1">
-            <div className="text-xs font-semibold uppercase tracking-wider text-blue-700">
+            <div className="text-xs font-semibold uppercase tracking-wider text-[#ce2124]">
               Proof & Endorsements
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#4E4E4E] tracking-tight">
               Feedback from the field
             </h2>
           </div>
@@ -32,7 +32,7 @@ export const TestimonialsSection: React.FC = () => {
             </div>
 
             <div className="space-y-6 relative z-10">
-              <span className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-blue-300 bg-blue-950/80 border border-blue-800/80 px-2.5 py-1 rounded-md">
+              <span className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-white bg-[#ce2124] px-2.5 py-1 rounded-md">
                 Featured Client Reference
               </span>
 
@@ -57,13 +57,13 @@ export const TestimonialsSection: React.FC = () => {
             
             {/* Quote 1: Mel / Aledade */}
             <div className="bg-stone-50 rounded-2xl p-6 sm:p-7 border border-stone-200/90 shadow-2xs flex flex-col justify-between space-y-4 flex-1">
-              <blockquote className="text-base font-medium text-slate-800 leading-relaxed">
+              <blockquote className="text-base font-medium text-[#4E4E4E] leading-relaxed">
                 “I’m taking the course frameworks for AI transformation directly into my team’s 90 day roadmap.”
               </blockquote>
 
               <div className="pt-4 border-t border-stone-200/60">
-                <div className="font-bold text-sm text-slate-900">Mel</div>
-                <div className="text-xs text-stone-500">
+                <div className="font-bold text-sm text-[#4E4E4E]">Mel</div>
+                <div className="text-xs text-[#5C5C5C]">
                   Senior Director, Experience Design and Research · Aledade
                 </div>
               </div>
@@ -71,13 +71,13 @@ export const TestimonialsSection: React.FC = () => {
 
             {/* Quote 2: Alexandre / Coast */}
             <div className="bg-stone-50 rounded-2xl p-6 sm:p-7 border border-stone-200/90 shadow-2xs flex flex-col justify-between space-y-4 flex-1">
-              <blockquote className="text-base font-medium text-slate-800 leading-relaxed">
+              <blockquote className="text-base font-medium text-[#4E4E4E] leading-relaxed">
                 “Clear frameworks, strong faculty, sharp peer group, and most importantly, practical enough that I walked out with a plan for how to accelerate AI transformation in my org.”
               </blockquote>
 
               <div className="pt-4 border-t border-stone-200/60">
-                <div className="font-bold text-sm text-slate-900">Alexandre</div>
-                <div className="text-xs text-stone-500">
+                <div className="font-bold text-sm text-[#4E4E4E]">Alexandre</div>
+                <div className="text-xs text-[#5C5C5C]">
                   SVP Product · Coast
                 </div>
               </div>

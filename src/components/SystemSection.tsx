@@ -76,14 +76,14 @@ export const SystemSection: React.FC<SystemSectionProps> = ({ onOpenPlaceholder 
         
         {/* Section Header */}
         <div className="max-w-3xl space-y-4">
-          <div className="text-xs font-semibold uppercase tracking-wider text-blue-700">
+          <div className="text-xs font-semibold uppercase tracking-wider text-[#ce2124]">
             The System
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] text-balance">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#4E4E4E] tracking-tight leading-[1.15] text-balance">
             Your best builders are already moving faster. <br className="hidden sm:inline" />
-            <span className="text-stone-500 font-normal">We help you with everyone else.</span>
+            <span className="text-[#5C5C5C] font-normal">We help you with everyone else.</span>
           </h2>
-          <p className="text-base sm:text-lg text-stone-600 leading-relaxed font-normal pt-1">
+          <p className="text-base sm:text-lg text-[#5C5C5C] leading-relaxed font-normal pt-1">
             Turn isolated wins into repeatable company muscle with focused effort across technical readiness, operating model, and culture.
           </p>
         </div>
@@ -95,29 +95,29 @@ export const SystemSection: React.FC<SystemSectionProps> = ({ onOpenPlaceholder 
             return (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-6 border border-stone-200/90 shadow-2xs hover:shadow-xs hover:border-blue-200 transition-all group flex flex-col justify-between"
+                className="bg-white rounded-2xl p-6 border border-stone-200/90 shadow-2xs hover:shadow-xs hover:border-[#ce2124]/30 transition-all group flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-stone-50 border border-stone-200 group-hover:bg-blue-50 group-hover:border-blue-200 text-stone-700 group-hover:text-blue-700 transition-colors flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-xl bg-stone-50 border border-stone-200 group-hover:bg-[#ce2124]/10 group-hover:border-[#ce2124]/30 text-[#4E4E4E] group-hover:text-[#ce2124] transition-colors flex items-center justify-center">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="font-mono text-xs text-stone-400 group-hover:text-blue-600 font-semibold">
+                    <span className="font-mono text-xs text-stone-400 group-hover:text-[#ce2124] font-semibold">
                       {pillar.tag}
                     </span>
                   </div>
 
-                  <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-900 transition-colors">
+                  <h3 className="text-lg font-bold text-[#4E4E4E] mb-2 group-hover:text-[#ce2124] transition-colors">
                     {pillar.title}
                   </h3>
-                  <p className="text-sm text-stone-600 leading-relaxed font-normal">
+                  <p className="text-sm text-[#5C5C5C] leading-relaxed font-normal">
                     {pillar.desc}
                   </p>
                 </div>
 
                 <div className="pt-4 mt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-400">
                   <span className="text-[11px] uppercase tracking-wider font-mono">Foundational pillar</span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-blue-600 transition-colors" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-stone-300 group-hover:bg-[#ce2124] transition-colors" />
                 </div>
               </div>
             );
@@ -130,13 +130,13 @@ export const SystemSection: React.FC<SystemSectionProps> = ({ onOpenPlaceholder 
             
             {/* Left Content */}
             <div className="lg:col-span-5 space-y-5">
-              <div className="text-xs font-semibold uppercase tracking-wider text-blue-700">
+              <div className="text-xs font-semibold uppercase tracking-wider text-[#ce2124]">
                 Where We Go Deepest
               </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+              <h3 className="text-2xl sm:text-3xl font-bold text-[#4E4E4E] tracking-tight leading-snug">
                 Start in engineering, product, and design.
               </h3>
-              <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#5C5C5C] leading-relaxed">
                 We work with CTOs, CPOs, and VPs of Product and Engineering to execute on the foundations of AI adoption, so their teams set the standard for the rest of the company.
               </p>
               <div className="pt-2">
@@ -147,7 +147,7 @@ export const SystemSection: React.FC<SystemSectionProps> = ({ onOpenPlaceholder 
                       '/ai-engineering-acceleration'
                     )
                   }
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-700 hover:text-blue-800 transition-colors cursor-pointer group"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#ce2124] hover:text-[#b01b1e] transition-colors cursor-pointer group"
                 >
                   <span>Explore AI engineering acceleration</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -159,12 +159,12 @@ export const SystemSection: React.FC<SystemSectionProps> = ({ onOpenPlaceholder 
             <div className="lg:col-span-7 bg-stone-50 rounded-2xl border border-stone-200/90 p-6 space-y-5">
               <div className="flex items-center justify-between pb-3 border-b border-stone-200">
                 <div className="flex items-center gap-2">
-                  <GitBranch className="w-4 h-4 text-blue-700" />
-                  <span className="text-xs font-bold text-slate-900">
+                  <GitBranch className="w-4 h-4 text-[#ce2124]" />
+                  <span className="text-xs font-bold text-[#4E4E4E]">
                     Engineering Readiness Pipeline Preview
                   </span>
                 </div>
-                <span className="text-[11px] font-mono px-2 py-0.5 bg-white border border-stone-200 rounded text-stone-600">
+                <span className="text-[11px] font-mono px-2 py-0.5 bg-white border border-stone-200 rounded text-[#5C5C5C]">
                   0 → 1 Delivery Stage
                 </span>
               </div>
@@ -178,14 +178,14 @@ export const SystemSection: React.FC<SystemSectionProps> = ({ onOpenPlaceholder 
                     onClick={() => setActivePipelineStep(idx)}
                     className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
                       activePipelineStep === idx
-                        ? 'bg-white border-blue-600 shadow-2xs'
+                        ? 'bg-white border-[#ce2124] shadow-2xs'
                         : 'bg-white/70 border-stone-200 hover:border-stone-300'
                     }`}
                   >
                     <div className="text-[11px] uppercase tracking-wider text-stone-400 font-mono mb-1">
                       Step 0{idx + 1}
                     </div>
-                    <div className="font-bold text-xs text-slate-900 mb-0.5">
+                    <div className="font-bold text-xs text-[#4E4E4E] mb-0.5">
                       {step.title}
                     </div>
                     <div className="text-[11px] text-stone-500 leading-tight">
@@ -197,16 +197,16 @@ export const SystemSection: React.FC<SystemSectionProps> = ({ onOpenPlaceholder 
 
               {/* Active Step Explainer Box */}
               <div className="bg-white rounded-xl p-4 border border-stone-200 text-xs text-stone-700 space-y-2">
-                <div className="flex items-center justify-between text-blue-900 font-semibold">
+                <div className="flex items-center justify-between text-[#4E4E4E] font-semibold">
                   <span className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-blue-700" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#ce2124]" />
                     <span>Inspection Focus: {pipelineSteps[activePipelineStep].title}</span>
                   </span>
                   <span className="font-mono text-[11px] text-stone-500">
                     Diagnostic check: PASS
                   </span>
                 </div>
-                <p className="text-stone-600 leading-relaxed font-normal">
+                <p className="text-[#5C5C5C] leading-relaxed font-normal">
                   {pipelineSteps[activePipelineStep].detail}
                 </p>
                 <div className="pt-2 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500 font-mono">

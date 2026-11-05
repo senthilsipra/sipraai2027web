@@ -48,14 +48,14 @@ export const HowWeWorkSection: React.FC<HowWeWorkSectionProps> = ({ onOpenPlaceh
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-stone-200/80">
           <div className="space-y-3 max-w-xl">
-            <div className="text-xs font-semibold uppercase tracking-wider text-blue-700">
+            <div className="text-xs font-semibold uppercase tracking-wider text-[#ce2124]">
               How We Work
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#4E4E4E] tracking-tight leading-[1.15]">
               What you can hire us to do.
             </h2>
           </div>
-          <p className="text-base sm:text-lg text-stone-600 max-w-md leading-relaxed font-normal">
+          <p className="text-base sm:text-lg text-[#5C5C5C] max-w-md leading-relaxed font-normal">
             We can build a roadmap or get in the code and help you ship the plan.
           </p>
         </div>
@@ -71,19 +71,19 @@ export const HowWeWorkSection: React.FC<HowWeWorkSectionProps> = ({ onOpenPlaceh
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <span className="text-[11px] font-mono uppercase tracking-wider font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
+                    <span className="text-[11px] font-mono uppercase tracking-wider font-semibold text-[#ce2124] bg-[#ce2124]/10 px-2 py-0.5 rounded border border-[#ce2124]/20">
                       {format.category}
                     </span>
-                    <div className="w-8 h-8 rounded-lg bg-white border border-stone-200 flex items-center justify-center text-stone-600 group-hover:text-blue-700 transition-colors">
+                    <div className="w-8 h-8 rounded-lg bg-white border border-stone-200 flex items-center justify-center text-[#5C5C5C] group-hover:text-[#ce2124] transition-colors">
                       <Icon className="w-4 h-4" />
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-900 transition-colors">
+                  <h3 className="text-xl font-bold text-[#4E4E4E] mb-3 group-hover:text-[#ce2124] transition-colors">
                     {format.title}
                   </h3>
 
-                  <p className="text-sm text-stone-600 leading-relaxed font-normal">
+                  <p className="text-sm text-[#5C5C5C] leading-relaxed font-normal">
                     {format.desc}
                   </p>
                 </div>
@@ -91,11 +91,11 @@ export const HowWeWorkSection: React.FC<HowWeWorkSectionProps> = ({ onOpenPlaceh
                 <div className="pt-6 mt-6 border-t border-stone-200/60 space-y-2">
                   <div className="flex items-center justify-between text-[11px] text-stone-500 font-mono">
                     <span>Duration</span>
-                    <span className="text-slate-800 font-medium">{format.timeframe}</span>
+                    <span className="text-[#4E4E4E] font-medium">{format.timeframe}</span>
                   </div>
                   <div className="flex items-center justify-between text-[11px] text-stone-500 font-mono">
                     <span>Outcome</span>
-                    <span className="text-slate-800 font-medium truncate max-w-[130px]" title={format.deliverable}>
+                    <span className="text-[#4E4E4E] font-medium truncate max-w-[130px]" title={format.deliverable}>
                       {format.deliverable}
                     </span>
                   </div>
@@ -108,12 +108,12 @@ export const HowWeWorkSection: React.FC<HowWeWorkSectionProps> = ({ onOpenPlaceh
         {/* Bottom CTA Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-2xl bg-stone-100 border border-stone-200/90 text-stone-700 text-xs">
           <div>
-            <strong className="font-semibold text-slate-900">Custom enterprise engagements:</strong>{' '}
+            <strong className="font-semibold text-[#4E4E4E]">Custom enterprise engagements:</strong>{' '}
             Need a blended advisory + embedded platform acceleration squad?
           </div>
           <a
             href="#talk"
-            className="inline-flex items-center gap-1.5 font-semibold text-blue-700 hover:text-blue-800 whitespace-nowrap cursor-pointer"
+            className="inline-flex items-center gap-1.5 font-semibold text-[#ce2124] hover:text-[#b01b1e] whitespace-nowrap cursor-pointer"
           >
             <span>Request custom scope scoping</span>
             <ArrowRight className="w-3.5 h-3.5" />
